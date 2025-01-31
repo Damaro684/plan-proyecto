@@ -17,6 +17,14 @@ public class Departamento
         return descripcionDpto;
     }
     
+    public void setDepartamento(String renombrado){
+        nombreDpto = renombrado;
+    }
+    
+    public void setDescripcion(String actualizadoDescripcion){
+        descripcionDpto = actualizadoDescripcion;
+    }
+    
     public void imprimirDetalles(){
         System.out.println("Nombre departamento: " + nombreDpto + "\nDescripcion: " + descripcionDpto);
     }
