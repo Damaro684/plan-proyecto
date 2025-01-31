@@ -4,9 +4,10 @@ public class Trabajador
     private Departamento dpto;
     private boolean jefe;
 
-    public Trabajador(String nombre, boolean esJefe){
+    public Trabajador(String nombre, boolean esJefe, String nombreDelDpto, String descripcionDpto, String nombreProyecto, String descripcionProyecto){
         nombreTrabajador = nombre;
         jefe = esJefe;
+        dpto = new Departamento(nombreDelDpto, descripcionDpto, nombreProyecto, descripcionProyecto);
     }
     
     public String getNombre(){
@@ -15,6 +16,14 @@ public class Trabajador
     
     public boolean getEsJefe(){
         return jefe;
+    }
+    
+    public void setNombre(String actualizadoNombre){
+        nombreTrabajador = actualizadoNombre;
+    }
+    
+    public void setJefe(boolean actualizadoJefe){
+        jefe = actualizadoJefe;
     }
     
     public void imprimirDetalles(){

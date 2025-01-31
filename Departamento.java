@@ -4,9 +4,10 @@ public class Departamento
     private String descripcionDpto;
     private Proyecto proyecto;
 
-    public Departamento(String nombre, String descripcion){
+    public Departamento(String nombre, String descripcion, String nombreProyecto, String descripcionProyecto){
         nombreDpto = nombre;
         descripcionDpto = descripcion;
+        proyecto = new Proyecto(nombreProyecto, descripcionProyecto);
     }
     
     public String getDepartamento(){
