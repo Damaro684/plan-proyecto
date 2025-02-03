@@ -34,7 +34,7 @@ public class Trabajador
         else {
             respuesta = "Nombre del trabajador: " + nombreTrabajador + "\nEs jefe?: " + "no";
         }
-        System.out.println(respuesta);
+        System.out.println(respuesta + dpto.imprimirDetalles());
     }
 }
 

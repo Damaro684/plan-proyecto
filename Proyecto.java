@@ -23,7 +23,7 @@ public class Proyecto{
         descripcion = actualizadoDescripcion;
     }
     
-    public void imprimirDetalles(){
-        System.out.println("Nombre proyecto: " + nombreProyecto + "\nDescripcion: " + descripcion);
+    public String imprimirDetalles(){
+        return "\nNombre proyecto: " + nombreProyecto + "\nDescripcion del proyecto: " + descripcion;
     }
 }

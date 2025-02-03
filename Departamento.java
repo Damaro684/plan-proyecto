@@ -26,8 +26,8 @@ public class Departamento
         descripcionDpto = actualizadoDescripcion;
     }
     
-    public void imprimirDetalles(){
-        System.out.println("Nombre departamento: " + nombreDpto + "\nDescripcion: " + descripcionDpto);
+    public String imprimirDetalles(){
+        return "\nNombre departamento: " + nombreDpto + "\nDescripcion del departamento: " + descripcionDpto + proyecto.imprimirDetalles();
     }
 }
 
