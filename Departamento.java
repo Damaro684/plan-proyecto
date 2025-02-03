@@ -26,8 +26,8 @@ public class Departamento
         descripcionDpto = actualizadoDescripcion;
     }
     
-    public String imprimirDetalles(){
-        return "\nNombre departamento: " + nombreDpto + "\nDescripcion del departamento: " + descripcionDpto + proyecto.imprimirDetalles();
+    public String devolverDetalles(){
+        return "\nNombre departamento: " + nombreDpto + "\nDescripcion del departamento: " + descripcionDpto + proyecto.devolverDetalles();
     }
 }
 

@@ -23,7 +23,7 @@ public class Proyecto{
         descripcion = actualizadoDescripcion;
     }
     
-    public String imprimirDetalles(){
+    public String devolverDetalles(){
         return "\nNombre proyecto: " + nombreProyecto + "\nDescripcion del proyecto: " + descripcion;
     }
 }
